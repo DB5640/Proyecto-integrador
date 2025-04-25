@@ -96,3 +96,16 @@ footer{
 
 
 body {}
+
+.roles {
+    display: flex;
+    gap: 50px;
+    margin: 20px;
+    padding: 80px;
+}
+
+.hr-roles {
+    border: 0;
+    height: 3px;
+    background-color: gray;
+}
