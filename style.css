@@ -109,3 +109,55 @@ body {}
     height: 3px;
     background-color: gray;
 }
+
+.imglogo {
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.titulo {
+    color: rgb(43, 43, 43);
+    position: absolute;
+    top: 200px;
+    left: 140px;
+}
+
+.ingresa_datos {
+    position: absolute;
+    top: 240px;
+    left: 160px;
+}
+
+.form {
+    margin-left: 100px;
+}
+
+.form img {
+    width: 30px;
+}
+
+.ingresarTag {
+    background-color: #090037;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 8px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+.oc {
+    display: flex;
+    margin-left: 40px;
+    gap: 10px;
+}
+
+.oc img {
+    width: 30px;
+}
+
+.imgformulario img {
+   position: absolute;
+   top: 0px;
+   left: 580px;
+   width: 700px;
+}
