@@ -142,7 +142,6 @@ body {}
     color: white;
     padding: 2px 8px;
     font-weight: 500;
-    margin-left: 150px;
 }
 
 .oc {
@@ -160,4 +159,9 @@ body {}
    top: 0px;
    left: 580px;
    width: 700px;
+}
+
+.botones{
+    display: inline-flex;
+    gap: 12px;
 }
