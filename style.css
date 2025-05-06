@@ -155,13 +155,17 @@ body {}
 }
 
 .imgformulario img {
-   position: absolute;
-   top: 0px;
-   left: 580px;
+   
    width: 700px;
 }
 
 .botones{
     display: inline-flex;
     gap: 12px;
+}
+
+.contenedorForm{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
 }
