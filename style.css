@@ -95,8 +95,6 @@ footer{
 }
 
 
-body {}
-
 .roles {
     display: flex;
     gap: 50px;
@@ -165,3 +163,43 @@ body {}
     display: inline-flex;
     gap: 12px;
 }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .starting-ingreso {
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;        
+    min-height: 90vh;           
+    text-align: center;          
+  }
+
+
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d85234;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .boton:hover{
+    transform: scale(1.1);
+    /* filter: opacity(0.1); */
+    background-color: rgba(216, 82, 52, 0.7);
+  }
+
+  .boton:active{
+    transform: scale(0.9);
+    box-shadow: inset -3px -3px black;
+  }
+  
+  
