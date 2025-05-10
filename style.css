@@ -78,13 +78,13 @@ main img {
     margin: 20px 0;
 }
 
-.subMenu ul{
+.subMenu ul {
     display: flex;
     justify-content: space-around;
     font-weight: bold;
 }
 
-footer{
+footer {
     background-color: #aaaaaa;
     padding: 5px 10px;
     text-align: center;
@@ -153,39 +153,40 @@ footer{
 }
 
 .imgformulario img {
-   
-   width: 700px;
+
+    width: 700px;
 }
 
-.botones{
+.botones {
     display: inline-flex;
     gap: 12px;
 }
 
-.contenedorForm{
+.contenedorForm {
     display: flex;
     gap: 10px;
     justify-content: space-between;
 }
 
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-  
-  .starting-ingreso {
+}
+
+.starting-ingreso {
     display: flex;
-    flex-direction: column;      
-    justify-content: center;    
-    align-items: center;        
-    min-height: 90vh;           
-    text-align: center;          
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+}
 
 
-  .boton {
+.boton {
     display: inline-block;
     padding: 10px 20px;
     background-color: #d85234;
@@ -193,17 +194,15 @@ body, html {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-  }
+}
 
-  .boton:hover{
+.boton:hover {
     transform: scale(1.1);
     /* filter: opacity(0.1); */
     background-color: rgba(216, 82, 52, 0.7);
-  }
+}
 
-  .boton:active{
+.boton:active {
     transform: scale(0.9);
     box-shadow: inset -3px -3px black;
-  }
-  
-  
+}
