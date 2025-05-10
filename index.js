@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', (param7, param8) => {
     btnEditar.addEventListener('click', () => {
         console.log('le di click a editar')
         alert('Ahora puedes editar tu cuenta');
-        window.location = 'file:///C:/Users/Coopecredito/Desktop/Programar/Proyecto%20integrador/Proyecto-integrador/inicio.html';
+        window.location = '/inicio.html';
     })
 })
