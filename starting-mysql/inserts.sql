@@ -1,10 +1,13 @@
-SELECT * FROM `starting`.cuenta;
-SELECT * FROM `starting`.cliente;
-SELECT * FROM `starting`.cobranza;
-SELECT * FROM `starting`.pago;
-SELECT * FROM `starting`.empleado;
+-- Consultas SELECT para verificar estructura de tablas
+SELECT * FROM starting.cuenta;
+SELECT * FROM starting.cliente;
+SELECT * FROM starting.cobranza;
+SELECT * FROM starting.pago;
+SELECT * FROM starting.empleado;
 
-insert into cuenta (id_cliente, id_tipo_persona, numero_cuenta, saldo_deudor, fecha_apertura) values (1, 1, 213, 4324, '2025-05-06');
+-- INSERCIÓN DE DATOS EN TABLA CUENTA
+INSERT INTO cuenta (id_cliente, id_tipo_persona, numero_cuenta, saldo_deudor, fecha_apertura) VALUES 
+(1, 1, 213, 4324, '2025-05-06'),
 (1, 1, 214, 1500.75, '2024-01-15'),
 (3, 2, 215, 8900.00, '2023-11-22'),
 (4, 1, 216, 320.50, '2025-02-10'),
@@ -45,7 +48,9 @@ insert into cuenta (id_cliente, id_tipo_persona, numero_cuenta, saldo_deudor, fe
 (39, 2, 251, 7800.00, '2023-12-24'),
 (40, 1, 252, 450.75, '2024-08-19');
 
-insert into cliente (nombre, direccion, telefono,email, fecha_registro, estado_cliente) values ('Amelia', 'Direcc1', '3122291435', 'amelia.alvarezbet@gmail.com', 6052025, '1');
+-- INSERCIÓN DE DATOS EN TABLA CLIENTE
+INSERT INTO cliente (nombre, direccion, telefono, email, fecha_registro, estado_cliente) VALUES 
+('Amelia', 'Direcc1', '3122291435', 'amelia.alvarezbet@gmail.com', 20250605, '1'),
 ('Carlos Martínez', 'Calle 123 #45-67', '3101234567', 'carlos.martinez@example.com', 20240515, '1'),
 ('Laura González', 'Avenida Principal 789', '3202345678', 'laura.gonzalez@example.com', 20240620, '1'),
 ('Pedro Sánchez', 'Carrera 56 #12-34', '3153456789', 'pedro.sanchez@example.com', 20240310, '0'),
@@ -77,6 +82,7 @@ insert into cliente (nombre, direccion, telefono,email, fecha_registro, estado_c
 ('Alejandro Méndez', 'Carrera 12 #34-56', '3101239876', 'alejandro.mendez@example.com', 20240528, '1'),
 ('Diana Campos', 'Avenida 56 #78-90', '3202348765', 'diana.campos@example.com', 20240918, '1');
 
+-- INSERCIÓN DE DATOS EN TABLA COBRANZA
 INSERT INTO cobranza (id_cliente, monto, fecha_primer, fecha_vencimiento, estado, metodo_pago, observaciones) VALUES
 -- Clientes con pagos pendientes
 (1, 1500.75, '2024-05-01', '2024-05-30', 'pendiente', NULL, 'Primera notificación enviada'),
@@ -118,6 +124,7 @@ INSERT INTO cobranza (id_cliente, monto, fecha_primer, fecha_vencimiento, estado
 (29, 800.50, '2024-04-12', '2024-05-12', 'pagado', 'efectivo', 'Pago parcial registrado'),
 (30, 2950.25, '2024-05-17', '2024-06-17', 'pendiente', NULL, 'Cliente VIP, manejar con cuidado');
 
+-- INSERCIÓN DE DATOS EN TABLA PAGO
 INSERT INTO pago (id_cliente, monto, fecha_pago, metodo_pago, referencia) VALUES
 -- Pagos recientes (2024)
 (1, 1500.00, '2024-05-10', 'transferencia', 'TRANS-789456'),
@@ -149,6 +156,7 @@ INSERT INTO pago (id_cliente, monto, fecha_pago, metodo_pago, referencia) VALUES
 (19, 800.00, '2024-04-20', 'transferencia', 'TRANS-963852'),
 (20, 2950.50, '2024-06-05', 'efectivo', 'REC-987');
 
+-- INSERCIÓN DE DATOS EN TABLA EMPLEADO
 INSERT INTO empleado (nombre, puesto, salario, fecha_contratacion, departamento, activo) VALUES
 -- Gerencia
 ('Juan Pérez', 'Gerente General', 8500.00, '2020-01-15', 'Gerencia', 1),
@@ -184,8 +192,3 @@ INSERT INTO empleado (nombre, puesto, salario, fecha_contratacion, departamento,
 ('Roberto Delgado', 'Ex-Asesor Comercial', 0.00, '2021-10-12', 'Ventas', 0),
 ('Carmen Vega', 'Ex-Contadora', 0.00, '2020-12-01', 'Contabilidad', 0),
 ('Santiago Ríos', 'Ex-Soporte Técnico', 0.00, '2022-11-20', 'TI', 0);
-
-
-
-
-
